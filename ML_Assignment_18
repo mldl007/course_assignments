@@ -1,0 +1,165 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "51cd7321-a204-4597-9398-93d32c7e9cbc",
+   "metadata": {},
+   "source": [
+    "<h4>1. What is the difference between supervised and unsupervised learning? Give some examples to\n",
+    "illustrate your point."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dfce4f34-c01f-4647-bfff-9172b10b2f1d",
+   "metadata": {},
+   "source": [
+    "In supervised learning the data has target labels for the model to learn patterns between input features and targets. While, in unsupervised learning the data doesn't have target labels. An unsupervised learning model finds clusters, anomalies and frequent item sets from unlabelled data/."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8d54be4a-31e8-411e-a958-40eac11776c1",
+   "metadata": {},
+   "source": [
+    "<h4>2. Mention a few unsupervised learning applications."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3003c149-26ea-4273-8004-99d43af9d0a1",
+   "metadata": {},
+   "source": [
+    "Anomaliy detection, novelty detection, market basket analysis, clustering"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "346fbbd7-af4c-467a-bb47-702fea562a35",
+   "metadata": {},
+   "source": [
+    "<h4>3. What are the three main types of clustering methods? Briefly describe the characteristics of each."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8f975048-26fa-4dca-a010-f45c2d42f349",
+   "metadata": {},
+   "source": [
+    "Centroid-based Clustering, Density-based Clustering, Hierarchical Clustering."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bd0bd812-ab9d-48ff-80d6-8259ee6f5d53",
+   "metadata": {},
+   "source": [
+    "<h4>4. Explain how the k-means algorithm determines the consistency of clustering."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8efee6bd-4549-412f-9bda-5e9eddcfef8f",
+   "metadata": {},
+   "source": [
+    "K-means algorithm uses random seed to maintain consistency to identify the initial centroids."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bb1ff3b3-3e30-4105-8ba4-83aef7b48450",
+   "metadata": {},
+   "source": [
+    "<h4>6. What is a dendrogram, and how does it work? Explain how to do it."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0b578de1-8172-470f-9096-25c67feb38b4",
+   "metadata": {},
+   "source": [
+    "Dendogram is a cluster plot made using agglomerative clustering. The distance between the points are calculated and the dendogram is plotted incrementally."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b13b551b-77cc-4152-83a5-d1076bf85b87",
+   "metadata": {},
+   "source": [
+    "<h4>7. What exactly is SSE? What role does it play in the k-means algorithm?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bfb35f29-2513-4852-a9f5-3b7efb06662d",
+   "metadata": {},
+   "source": [
+    "Sum of squared errors (SSE) is a measure to identify the distance of a sample from its entroid. Higher SSE means samples are far from their centroids."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "67060c30-b587-4d53-ab34-8511c08309d6",
+   "metadata": {},
+   "source": [
+    "<h4>8. With a step-by-step algorithm, explain the k-means procedure."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "995348b5-3b47-4a80-99d0-4fbd35d6ac63",
+   "metadata": {},
+   "source": [
+    "1. Randomly select 'k' centroids from the data.\n",
+    "2. find distance of each sample from the centroids and asssign the sample to closest centroid.\n",
+    "3. recenter the centroids using mean of the samples in a cluster.\n",
+    "4. continue the process until the SSE is low (determined using elbow method)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "075a2e6a-bc9b-443c-9ca1-0585ca1ee208",
+   "metadata": {},
+   "source": [
+    "<h4>9. In the sense of hierarchical clustering, define the terms single link and complete link."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7a8a99a4-6f83-4403-8632-66ec49509447",
+   "metadata": {},
+   "source": [
+    "Single link - You link two clusters based on the minimum distance between 2 elements. Complete link - You link two clusters based on the max distance between 2 elements."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54ebec3a-18ac-4d0c-93c1-e8cc58dd2402",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
